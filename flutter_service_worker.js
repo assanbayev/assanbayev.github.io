@@ -3,20 +3,57 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "62d5b309766803222978f589168a5e54",
-"assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/NOTICES": "7bf10ba768f3ddf1c094f7581c6574db",
+  "assets/AssetManifest.json": "d24d052fce9fd1301708ac98fddbcbc1",
+"assets/assets/fonts/Gilroy-Regular.ttf": "af5b8da12b32c5e74532c6446eb356b4",
+"assets/assets/fonts/Gilroy-RegularItalic.ttf": "9b408b831f43b9eb43d2a6dac800e5d6",
+"assets/assets/images/backgrounds/blue.png": "c2c401335879ec498cd7f2d1644b6df7",
+"assets/assets/images/backgrounds/main_background.png": "e84fc9a5f62b5b2ece8e42ffcb908a8d",
+"assets/assets/images/backgrounds/red.png": "8858177c57f2a677492a441c41ed4022",
+"assets/assets/images/categories/buy.png": "2e20d5b5081ed4d38af96062829fe455",
+"assets/assets/images/categories/cut.png": "d7ed49e3ebdb3656b8e9e283bb854887",
+"assets/assets/images/categories/game.png": "69575158c4b3c12c25a634db65677fec",
+"assets/assets/images/categories/restaurant.png": "cb1cae22be67cc1798cc8f70f32e8765",
+"assets/assets/images/categories/sales.png": "eacf4708c2da26ebf03fd1182ca953c8",
+"assets/assets/images/news/news.png": "7eb3364af3acb476c74aee2259a9754a",
+"assets/assets/images/online_booking/1.png": "64588eab346e3c9b6ccf88d89a4594a6",
+"assets/assets/images/online_booking/2.png": "2f269428c49d61f45350334a7373770a",
+"assets/assets/images/quests/1.png": "a6471b2c2c59695f3f98e04a673e214c",
+"assets/assets/images/quests/2.png": "d9babce18e818cbedf6268c59d89e112",
+"assets/assets/images/social_networks/apple.png": "af6b8451b3b076fd00e939e019d78507",
+"assets/assets/images/social_networks/facebook.png": "021ada146ffb7c1753557ff29618d04c",
+"assets/assets/images/social_networks/google.png": "ca2f7db280e9c773e341589a81c15082",
+"assets/assets/images/stories/1.png": "b293551ad47a26ab0e9d528b9ea4af07",
+"assets/assets/images/stories/2.png": "beed7b08b867b10505c8b149b9792d0b",
+"assets/assets/images/stories/3.png": "19be6f33aa263da752c49f48a9fdc28b",
+"assets/assets/images/welcome/family.png": "87e7fbfbf0b908e8b2e8f2114aa7c967",
+"assets/assets/images/welcome/mega_sign.png": "cb5c5379ea3cd723637df3de82f17836",
+"assets/assets/images/welcome/welcome1.png": "edf936402100131aaf0ef8617d0d7733",
+"assets/assets/images/welcome/welcome2.png": "122de8ffabf0db72d607d196b6d5347a",
+"assets/assets/images/welcome/welcome3.png": "6e6df834387b98a4731305a773213c08",
+"assets/assets/images/welcome/welcome4.png": "6c2150afa7c39eeaa7e870db47504f3e",
+"assets/assets/svgs/camera.svg": "567183e0443a065aaa2edf187822305e",
+"assets/assets/svgs/main.svg": "370890299306c80adf459e305675c00a",
+"assets/assets/svgs/menu.svg": "a126e27c6ead56344fefb80f90283215",
+"assets/assets/svgs/parking_lot.svg": "668db45ae6772e6d61035ca074e95761",
+"assets/assets/svgs/profile.svg": "b2720cdce0fedb2b201a617c1fd78a7c",
+"assets/FontManifest.json": "a06f9d7d633680fd7419696d99903b48",
+"assets/fonts/MaterialIcons-Regular.otf": "7e7a6cccddf6d7b20012a548461d5d81",
+"assets/NOTICES": "1f704e250e26e5a452ffd5aee2ad9f42",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/packages/wakelock_web/assets/no_sleep.js": "7748a45cd593f33280669b29c2c8919a",
+"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
+"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
+"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
+"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "ab6acdb4b8cbfeb4b1d02bf968f8664e",
-"/": "ab6acdb4b8cbfeb4b1d02bf968f8664e",
-"main.dart.js": "d000170edc71b37b6e9bdae4daf1128e",
-"manifest.json": "c7ea920c72f5a7ef746653e44feeaf29",
-"version.json": "deb0f78407f4c1a2a6b5f69b1c4e5f48"
+"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
+"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
+"index.html": "250406ed946c19bd62b539726e1bba2d",
+"/": "250406ed946c19bd62b539726e1bba2d",
+"main.dart.js": "51b0454175f1b0e04c3ae254a8c7ae94",
+"manifest.json": "4a9cf04d84c54a64e4d46b7856452544",
+"version.json": "8ecefa9f16c87599e22d668ee1c92278"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -34,7 +71,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
@@ -160,7 +197,7 @@ async function downloadOffline() {
     }
     currentContent[key] = true;
   }
-  for (var resourceKey in Object.keys(RESOURCES)) {
+  for (var resourceKey of Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
       resources.push(resourceKey);
     }
