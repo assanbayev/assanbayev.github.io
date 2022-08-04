@@ -277,12 +277,13 @@
         //для проверки. берет бэйс64 и добавляет ее в ДОМ элемент
         async function addCanvasToImage() {
             var base64Url = await getBase64();
+            localStorage.setItem('graphImg', base64Url);
             //  console.log(base64Url);
-            var img = document.createElement("img");
-            img.src = base64Url;
-            img.alt = 'error';
-            var el = document.querySelector('.dcg-expressionlist');
-            el.appendChild(img);
+            /* var img = document.createElement("img");
+             img.src = base64Url;
+             img.alt = 'error';
+             var el = document.querySelector('.dcg-expressionlist');
+             el.appendChild(img);*/
         }
         //основная фунция. находит два нужных канваса, соединяет их и возвращает base64
         async function getBase64() {
@@ -320,7 +321,7 @@
             span.style.font = '12px';
             var newButton = document.createElement("div");
             // var newButton = document.findElementByAttribute("dcg-command", "enter");
-            newButton.addEventListener('click', downloadCanvas);
+            newButton.addEventListener('click', addCanvasToImage);
             newButton.appendChild(span);
 
             newButton.classList.add('my__button');
