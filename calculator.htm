@@ -277,7 +277,7 @@
         //для проверки. берет бэйс64 и добавляет ее в ДОМ элемент
         async function addCanvasToImage() {
             var base64Url = await getBase64();
-            localStorage.setItem('graphImg', base64Url);
+            window.opener.document.getElementsByClassName('ql-editor')[0].innerHTML += '<img src="' + base64Url + '" >';
             //  console.log(base64Url);
             /* var img = document.createElement("img");
              img.src = base64Url;
