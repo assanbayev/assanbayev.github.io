@@ -285,6 +285,18 @@
              var el = document.querySelector('.dcg-expressionlist');
              el.appendChild(img);*/
         }
+        async function saveAsHiddenImage() {
+            console.log('closing inside');
+            var base64Url = await getBase64();
+            var img = document.createElement("img");
+            img.src = base64Url;
+            img.alt = 'error';
+            img.id = 'save__image';
+            img.style.display = 'hidden';
+            document.body.appendChild(img);
+            window.opener.postMessage(base64Url, 'http://www.keleshek-2030.kz');
+            window.close();
+        }
         //основная фунция. находит два нужных канваса, соединяет их и возвращает base64
         async function getBase64() {
             canvasGraph = document.querySelector('.dcg-graph-inner');
@@ -321,7 +333,8 @@
             span.style.font = '12px';
             var newButton = document.createElement("div");
             // var newButton = document.findElementByAttribute("dcg-command", "enter");
-            newButton.addEventListener('click', addCanvasToImage);
+            newButton.id = 'save__button';
+            newButton.addEventListener('click', saveAsHiddenImage);
             newButton.appendChild(span);
 
             newButton.classList.add('my__button');
