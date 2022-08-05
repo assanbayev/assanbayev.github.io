@@ -276,10 +276,9 @@
         }
         //для проверки. берет бэйс64 и добавляет ее в ДОМ элемент
 
-        async function saveAsHiddenImage() {
+        async function sendMessageAndClose() {
             console.log('closing inside');
             var base64Url = await getBase64();
-
             window.opener.postMessage(base64Url, 'http://www.keleshek-2030.kz');
             window.close();
         }
@@ -288,10 +287,13 @@
             canvasGraph = document.querySelector('.dcg-graph-inner');
             var canvasEquation;
             var el = document.querySelector('.dcg-expressionlist');
-            canvasEquation = await html2canvas(el);
-
-            var mergedCanvas = drawTwoCanvasesInOne(canvasEquation, canvasGraph);
-            return mergedCanvas.toDataURL();
+            if (el) {
+                canvasEquation = await html2canvas(el);
+                var mergedCanvas = drawTwoCanvasesInOne(canvasEquation, canvasGraph);
+                return mergedCanvas.toDataURL();
+            } else {
+                return canvasGraph.toDataURL();
+            }
         }
         //соединяет 2 канваса
         function drawTwoCanvasesInOne(canvas1, canvas2) {
@@ -319,7 +321,7 @@
             var newButton = document.createElement("div");
             // var newButton = document.findElementByAttribute("dcg-command", "enter");
             newButton.id = 'save__button';
-            newButton.addEventListener('click', saveAsHiddenImage);
+            newButton.addEventListener('click', sendMessageAndClose);
             newButton.appendChild(span);
 
             newButton.classList.add('my__button');
